@@ -1,0 +1,54 @@
+site_name: XDV 가이드라인
+docs_dir: 'docs'
+
+theme:
+    name: material
+    icon:
+        admonition:
+            info: fontawesome/solid/database
+    features:
+        - content.tabs.link
+        - content.code.copy
+    language: ko
+    palette:
+        - media: '(prefers-color-scheme: light)'
+          scheme: default
+          primary: custom
+          toggle:
+              icon: material/weather-night
+              name: Switch to dark mode
+        - media: '(prefers-color-scheme: dark)'
+          scheme: slate
+          primary: custom
+          toggle:
+              icon: material/brightness-4
+              name: Switch to light mode
+
+markdown_extensions:
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    - tables
+    - pymdownx.tabbed:
+          alternate_style: true
+    - pymdownx.emoji:
+          emoji_index: !!python/name:material.extensions.emoji.twemoji
+          emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    - attr_list
+    - md_in_html
+
+plugins:
+    - search:
+          lang: ko
+    - i18n:
+          docs_structure: folder
+          languages:
+              - locale: ko
+                name: 한국어
+                build: true
+                default: true
+    - literate-nav:
+          nav_file: nav.md
+
+nav:
+    - index.md
