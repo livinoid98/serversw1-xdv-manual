@@ -1,0 +1,2341 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../create_object/">
+      
+      
+        <link rel="next" href="../use_data_list/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>시트 개체 옵션 모음 - XDV 가이드라인</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0s224 35.8 224 80m-54.8 134.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3M0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432z"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-position" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href=".." title="XDV 가이드라인" class="md-header__button md-logo" aria-label="XDV 가이드라인" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            XDV 가이드라인
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              시트 개체 옵션 모음
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="XDV 가이드라인" class="md-nav__button md-logo" aria-label="XDV 가이드라인" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    XDV 가이드라인
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    프로젝트 구성
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            프로젝트 구성
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create_project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    프로젝트 생성
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    데이터베이스 연결하기
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            데이터베이스 연결하기
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connect_database/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    데이터베이스 기반
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connect_csv/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSV 기반
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    데이터 가져오기
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            데이터 가져오기
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create_datasource/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    데이터 소스 생성
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    대시보드 구성
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            대시보드 구성
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create_sheet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    시트생성
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    시트 개체 사용법
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            시트 개체 사용법
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create_object/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    시트 개체 생성방법
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    시트 개체 옵션 모음
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use_data_list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    데이터 목록 사용법
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    데이터 바인딩 방법
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            데이터 바인딩 방법
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mark_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    데이터 표시하기
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../store_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    데이터 담기 (모델 변수)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connect_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    모델변수 연결하기
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connect_data2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    모델변수 양방향 연결
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    이벤트 사용법
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            이벤트 사용법
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use_event/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    이벤트 사용법
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    추출하기
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            추출하기
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../export_pdf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PDF로 추출하기
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../export_excel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    엑셀로 추출하기
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    사용해보면 좋을 기능
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            사용해보면 좋을 기능
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../etc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    사용해보면 좋을 기능
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="1-position">1. 위치, 크기 (Position)</h1>
+<table>
+<thead>
+<tr>
+<th>사용 변수 명</th>
+<th>사용 용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>order</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>flexGrow</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>flexShrink</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>flexBasis</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>alignSelf</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>width</td>
+<td>넓이를 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>height</td>
+<td>높이를 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>padding</td>
+<td>내부의 padding 공간값을 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>paddingTopAndBottom</td>
+<td>상하 padding 공간값을 설정</td>
+<td>padding: 10px 0;</td>
+</tr>
+<tr>
+<td>paddingLeftAndRight</td>
+<td>좌우 padding 공간값을 설정</td>
+<td>padding: 0 10px;</td>
+</tr>
+<tr>
+<td>paddingTop</td>
+<td>윗쪽 padding 값을 설정</td>
+<td>padding-top: 10px;</td>
+</tr>
+<tr>
+<td>paddingBottom</td>
+<td>아랫쪽 padding 값을 설정</td>
+<td>padding-bottom: 10px;</td>
+</tr>
+<tr>
+<td>paddingLeft</td>
+<td>왼쪽 padding 값을 설정</td>
+<td>padding-left: 10px;</td>
+</tr>
+<tr>
+<td>paddingRight</td>
+<td>오른쪽 padding 값을 설정</td>
+<td>padding-right: 10px;</td>
+</tr>
+<tr>
+<td>gridRowStart</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridRowEnd</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridColumnStart</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridColumnEnd</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridArea</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridAreaType</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridAlignSelf</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridJustifySelf</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridOrder</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridZindex</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>use</td>
+<td>객체 사용 여부</td>
+<td>false일 시 UI를 생성하지 않음</td>
+</tr>
+<tr>
+<td>visible</td>
+<td>객체는 생성하나 UI에 보여줄지 설정 여부</td>
+<td>'use' 값이 false 일 경우 해당 속성은 무시</td>
+</tr>
+<tr>
+<td>maintainSpace</td>
+<td>'visible' 이 false일 때 개체 크기만큼 공간을 사용할지 설정 여부</td>
+<td>'visible'값이 true일 시 항상 공간을 유지하므로 해당 속성은 무시</td>
+</tr>
+</tbody>
+</table>
+<h1 id="2-decoration">2. 장식 (Decoration)</h1>
+<table>
+<thead>
+<tr>
+<th>사용 변수명</th>
+<th>사용 용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>폰트 및 svg 이미지 등 내부 콘텐츠 색상을 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>backgroundColor</td>
+<td>개체의 배경색을 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>padding</td>
+<td>padding값을 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>paddingBottom</td>
+<td>아랫쪽 padding값을 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>paddingLeft</td>
+<td>왼쪽 padding값을 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>paddingLeftAndRight</td>
+<td>좌우의 padding값을 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>paddingRight</td>
+<td>오른쪽 padding값을 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>paddingTop</td>
+<td>윗쪽의 padding값을 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>paddingTopAndBottom</td>
+<td>상하의 padding값을 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>fontStyle</td>
+<td>글자의 모양을 선택</td>
+<td>normal : 기본 / italic : 기울임체</td>
+</tr>
+<tr>
+<td>fontWeight</td>
+<td>글자의 굵기를 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>fontSize</td>
+<td>글자의 크기를 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>fontFamily</td>
+<td>글꼴의 이름을 설정</td>
+<td>serif : 장식용 획 O / sans-serif : 장식용 획 X<br>'나눔 고딕' 과 font-family name을 변경하고 싶을 때는 크롬의 글꼴을 변경 시 자동 변경됩니다.</td>
+</tr>
+<tr>
+<td>letterSpacing</td>
+<td>자간의 간격을 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>horizontalAlign</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>verticalAlign</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>dropdownColor</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>dropdownBackgroundColor</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>dropdownFontStyle</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>dropdownFontWeight</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>dropdownFontSize</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>dropdownFontFamily</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>dropdownLetterSpacing</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>borderWidth</td>
+<td>선의 굵기를 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>borderColor</td>
+<td>선의 색상을 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>borderStyle</td>
+<td>선의 모양을 선택</td>
+<td>직선 / 점선 / 도트 / 겹선</td>
+</tr>
+<tr>
+<td>borderRadius</td>
+<td>모서리 둥근 정도를 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>objectFit</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="3-button">3. 버튼 (Button)</h1>
+<table>
+<thead>
+<tr>
+<th>사용변수명</th>
+<th>사용용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>label</td>
+<td>버튼에 표시할 이름을 설정</td>
+<td>innerText</td>
+</tr>
+<tr>
+<td>imageAlign</td>
+<td>이미지를 버튼의 어디에 위치시킬지를 설정</td>
+<td>왼쪽 / 아랫쪽 / 왼쪽 / 오른쪽</td>
+</tr>
+<tr>
+<td>imageGap</td>
+<td>이미지와 텍스트의 사이 간격을 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>비활성화 여부</td>
+<td>비활성화 시 버튼 클릭 불가</td>
+</tr>
+<tr>
+<td>onClick</td>
+<td>버튼을 클릭했을 때 클릭이벤트를 발생</td>
+<td>javascript만 사용가능</td>
+</tr>
+<tr>
+<td>imageFileName</td>
+<td>첨부할 이미지를 선택</td>
+<td></td>
+</tr>
+<tr>
+<td>imagePath</td>
+<td>첨부할 이미지를 선택</td>
+<td></td>
+</tr>
+<tr>
+<td>imageWidth</td>
+<td>이미지의 넓이 설정</td>
+<td>기본은 이미지의 고유 크기</td>
+</tr>
+<tr>
+<td>imageHeight</td>
+<td>이미지의 높이 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>hideOnExport</td>
+<td>pdf로 추출할 시, 해당 개체 숨김여부</td>
+<td></td>
+</tr>
+<tr>
+<td>useAction</td>
+<td>버튼 클릭 시, 엑셀 파일을 생성</td>
+<td>시트 실행모드에서 사용 가능</td>
+</tr>
+</tbody>
+</table>
+<h1 id="4-chart">4. 차트 (Chart)</h1>
+<table>
+<thead>
+<tr>
+<th>사용변수명</th>
+<th>사용용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="5-cron">5. 크론 (Cron)</h1>
+<table>
+<thead>
+<tr>
+<th>사용변수명</th>
+<th>사용용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="6-data-dropdown">6. 데이터 드롭다운 (Data Dropdown)</h1>
+<table>
+<thead>
+<tr>
+<th>사용변수명</th>
+<th>사용용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="7-data-list">7. 데이터 목록 (Data List)</h1>
+<table>
+<thead>
+<tr>
+<th>사용변수명</th>
+<th>사용용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>modelVariable</td>
+<td>변수를 설정 시 목록의 전체 배열이 해당 변수에 담김</td>
+<td></td>
+</tr>
+<tr>
+<td>selectedModelVariable</td>
+<td>변수를 설정 시 사용자가 체크박스에 체크한 목록의 배열이 해당 변수에 담김</td>
+<td></td>
+</tr>
+<tr>
+<td>defaultLabel</td>
+<td>실행 전 초기 기본값을 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>hideOnExport</td>
+<td>pdf로 추출 시, 해당 개체를 숨길지를 결정</td>
+<td></td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>비활성화 여부</td>
+<td></td>
+</tr>
+<tr>
+<td>dataSource</td>
+<td>데이터 소스를 선택</td>
+<td></td>
+</tr>
+<tr>
+<td>selectedLabel</td>
+<td>UI에 표시할 칼럼을 설정</td>
+<td>[{label: 'label': value: 'value'}] 형태로 들어옴, label은 UI에 표기할 칼럼 / value는 저장될 칼럼</td>
+</tr>
+<tr>
+<td>selectedValue</td>
+<td>목록에서 해당 item을 선택할 시 저장될 칼럼을 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>isShowCheckbox</td>
+<td>true 시, 목록의 각 item 왼쪽에 체크박스가 표시됨</td>
+<td></td>
+</tr>
+<tr>
+<td>onModelValueEvent</td>
+<td>전체 목록이 변경되었을 때 발생하는 이벤트</td>
+<td>$event 변수에 전체 값이 담기며, 핸들링 가능</td>
+</tr>
+<tr>
+<td>onSelectedModelValueEvent</td>
+<td>체크박스로 선택한 목록이 변경되었을 때 발생하는 이벤트</td>
+<td>$event 변수에 선택된 값이 담기며, 핸들링 가능</td>
+</tr>
+<tr>
+<td>hideOnExecute</td>
+<td>시트실행모드에서 새로고침, 상태 아이콘 표시 유무를 설정</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="8-data-source">8. 데이터 소스 (Data Source)</h1>
+<table>
+<thead>
+<tr>
+<th>사용변수명</th>
+<th>사용용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dataSource</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>dataSourceRefName</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>onDataReady</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="9-data-text">9. 데이터 문자열 (Data Text)</h1>
+<table>
+<thead>
+<tr>
+<th>사용변수명</th>
+<th>사용용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dataSource</td>
+<td>데이터소스를 선택</td>
+<td></td>
+</tr>
+<tr>
+<td>selectedColumn</td>
+<td>몇 번째 행(row)의 데이터를 가져올지를 선택</td>
+<td>default : 0번째 인덱스</td>
+</tr>
+<tr>
+<td>isFormatDecimal</td>
+<td>소수점자릿수를 일괄적으로 제한 여부</td>
+<td></td>
+</tr>
+<tr>
+<td>decimalCnt</td>
+<td>isFormatDecimal = true일 시, 몇 자리까지 소수점자리를 표시할지를 설정</td>
+<td>default: 0 / 소수점 표시 안함</td>
+</tr>
+<tr>
+<td>hideOnExport</td>
+<td>pdf로 내보낼 때 해당 개체 표시여부 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>비활성화 여부</td>
+<td>true 일 시, 실행모드에서 데이터 실행 부분을 하지 않음</td>
+</tr>
+<tr>
+<td>onSetValue</td>
+<td>값이 변경될 때마다 발생하는 이벤트</td>
+<td>$event 변수로 핸들링</td>
+</tr>
+<tr>
+<td>addComma</td>
+<td>구분 기호 사용 여부</td>
+<td>1000단위 마다 ,(쉼표)로 나누어서 표시할지를 설정</td>
+</tr>
+<tr>
+<td>isLocaleSeparator</td>
+<td>크롬에 설정된 국가에 따라 구분기호 사용 여부 결정</td>
+<td>Ex. '인도' 국가 설정 시, 서양식 3자리 표기법과 다르게 처음 3자리 이후 2자리마다 쉼표를 찍는 방식 채택</td>
+</tr>
+<tr>
+<td>decimalSeparator</td>
+<td>소수 구분 기호 시 사용할 문자를 설정</td>
+<td>Ex. 소수점 6자리를 @ 기호로 표기 시, 10.123000 -&gt; 10@123000 으로 UI에 표기됨</td>
+</tr>
+<tr>
+<td>thousandsSeparator</td>
+<td>1000단위마다 구분 기호를 사용 시 구분 문자를 설정</td>
+<td>Ex. @로 설정 시, 1000000 -&gt; 1@000@000 으로 UI에 표기됨</td>
+</tr>
+<tr>
+<td>hideOnExecute</td>
+<td>실행 시 action 도구 숨기기 여부</td>
+<td>false 시 실행모드에서 데이터 불러오기 실행, 중단 등의 액션버튼이 활성화되지 않음</td>
+</tr>
+<tr>
+<td>overflowContentOption</td>
+<td>내부 문자열 등 콘텐츠가 크기를 넘쳤을 때 어떻게 할지를 결정</td>
+<td>1. 지정하지 않음 - 내부 콘텐츠가 넘쳐도 무시함<br>2. 폰트 크기 맞춤 - fitty 라이브러리를 활용하여 폰트 크기를 줄여 영역사이즈에 맞춤<br>3. ... 생략 표시 - vue3-text-clamp 라이브러리를 활용 마지막 줄 끝에 '...' 표시 후 이후 내용은 생략</td>
+</tr>
+<tr>
+<td>whiteSpaceOption</td>
+<td>내부 콘텐츠에 white-space 옵션을 적용함</td>
+<td>normal / nowrap / pre / pre-wrap / pre-line / break-spaces</td>
+</tr>
+<tr>
+<td>wordBreakOption</td>
+<td>내부 콘텐츠의 줄바꿈 옵션 word-break 옵션을 적용함</td>
+<td>normal / break-all / keep-all</td>
+</tr>
+<tr>
+<td>overflowWrapOption</td>
+<td>내부 콘텐츠의 넘침 옵션 overflow-wrap 옵션을 적용함</td>
+<td>normal / break-word / anywhere</td>
+</tr>
+</tbody>
+</table>
+<h1 id="10-date-picker">10. 날짜 선택기 (Date Picker)</h1>
+<table>
+<thead>
+<tr>
+<th>사용변수명</th>
+<th>사용용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>modelVariable</td>
+<td>모델변수</td>
+<td>변수를 연결하면 설정한 날짜를 해당 변수에 저장</td>
+</tr>
+<tr>
+<td>modelValue</td>
+<td>UI에 보여줄 날짜 선택</td>
+<td></td>
+</tr>
+<tr>
+<td>onUpdateModelValue</td>
+<td>날짜를 변경하였을 때 발생하는 이벤트</td>
+<td>$event 변수에 날짜가 담겨서 핸들링 가능</td>
+</tr>
+<tr>
+<td>selectableFirstDate</td>
+<td>최소날짜를 지정</td>
+<td>해당 값 전의 날짜를 선택할 수 없음</td>
+</tr>
+<tr>
+<td>selectableLastDate</td>
+<td>최대날짜를 지정</td>
+<td>해당 값 이후의 날짜를 선택할 수 없음</td>
+</tr>
+<tr>
+<td>hideOnExport</td>
+<td>pdf로 내보낼 때, 해당 개체를 숨긴 채 출력할지 여부</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="11-drop-down">11. 드롭다운 (Drop Down)</h1>
+<table>
+<thead>
+<tr>
+<th>사용변수명</th>
+<th>사용용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>modelVariable</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>onSelectDropdown</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>defaultLabel</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>hideOnExport</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>items</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h1 id="12-image">12. 이미지 (Image)</h1>
+<table>
+<thead>
+<tr>
+<th>사용변수명</th>
+<th>사용용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>imageFileName</td>
+<td>UI에 표시할 이미지 경로 및 이름</td>
+<td></td>
+</tr>
+<tr>
+<td>imagePath</td>
+<td>UI에 표시할 이미지 경로 및 이름</td>
+<td></td>
+</tr>
+<tr>
+<td>imageWidth</td>
+<td>이미지의 넓이를 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>imageHeight</td>
+<td>이미지의 높이를 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>hideOnExport</td>
+<td>pdf로 추출 시 해당 개체를 표시할 것이지 여부 선택</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="13-input">13. 입력창 (Input)</h1>
+<table>
+<thead>
+<tr>
+<th>사용변수명</th>
+<th>사용용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>modelVariable</td>
+<td>변수 설정 시 입력값이 해당 변수에 담김</td>
+<td></td>
+</tr>
+<tr>
+<td>modelValue</td>
+<td>모델변수 설정하지 않을 시, 입력창에 담길 값을 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>onTyping</td>
+<td>해당 입력창의 값이 바뀔때마다 발생하는 이벤트</td>
+<td>$event 변수에 입력값이 들어옴</td>
+</tr>
+<tr>
+<td>placeholder</td>
+<td>빈 값이 들어올 때 placeholder를 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>inputType</td>
+<td>들어갈 콘텐츠의 유형을 선택</td>
+<td>문자열 / 숫자</td>
+</tr>
+<tr>
+<td>hideOnExport</td>
+<td>pdf로 추출 시, 개체를 보여줄지를 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>maxLength</td>
+<td>inputType=문자열인 경우, 문자열의 최대길이를 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>min</td>
+<td>inputType=숫자인 경우, 숫자의 최소값을 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>max</td>
+<td>inputType=숫자인 경우, 숫자의 최댓값을 설정</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="14-layout">14. 레이아웃 (Layout)</h1>
+<table>
+<thead>
+<tr>
+<th>사용변수명</th>
+<th>사용용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>layoutType</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>flexDirection</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>flexWrap</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>justifyContent</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>alignItems</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>alignContent</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gap</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>rowGap</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>columnGap</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridTemplateRows</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridTemplateColumns</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridTemplateAreas</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridGap</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridRowGap</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridColumnGap</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridAutoRows</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridAutoColumns</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridAutoFlow</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridAlignContent</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridJustifyContent</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridAlignItems</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>gridJustifyItems</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>tailoredToPaper</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>hideOnExport</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>backgroundColor</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="15-line-">15. 선 (Line) - 가로줄 / 세로줄</h1>
+<table>
+<thead>
+<tr>
+<th>사용변수명</th>
+<th>사용용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>strokeWidth</td>
+<td>선 굵기 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>strokeOpacity</td>
+<td>선 투명도 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>strokeDashArray</td>
+<td>점선 표시를 배열로 설정</td>
+<td>[길이, 간격, 길이, 간격, 길이, 간격] 으로 설정</td>
+</tr>
+<tr>
+<td>strokeOffset</td>
+<td>점선 시작점 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>strokeLineCap</td>
+<td>선 끝 모양을 선택</td>
+<td>기본 / 둥글게 / 사각형</td>
+</tr>
+<tr>
+<td>hideOnExport</td>
+<td>pdf로 추출 시 해당 개체를 보여줄지를 설정</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="16-map">16. 지도 (Map)</h1>
+<table>
+<thead>
+<tr>
+<th>사용변수명</th>
+<th>사용용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hideOnExport</td>
+<td>pdf로 추출 시 해당 개체 숨김여부</td>
+<td></td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>비활성화 여부</td>
+<td></td>
+</tr>
+<tr>
+<td>followFirstBaseLayer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>initCenter</td>
+<td>해당 값 설정 시, 초기에 보여줄 center 좌표를 설정 가능</td>
+<td>x축, y축 설정</td>
+</tr>
+<tr>
+<td>moveInitCenterByMarker</td>
+<td>초기 좌표를 마커 위치의 중심을 설정 여부</td>
+<td>true 시, 데이터를 가져왔을 때 제일 첫번째 값에 해당하는 정보로 지도의 중심을 설정</td>
+</tr>
+<tr>
+<td>selectedLayers</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>layers</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>selectedBaseLayers</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>view</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h1 id="17-sheet">17. 시트 (Sheet)</h1>
+<table>
+<thead>
+<tr>
+<th>사용변수명</th>
+<th>사용용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="18-sochart">18. 단일차트 (soChart)</h1>
+<table>
+<thead>
+<tr>
+<th>사용변수명</th>
+<th>사용용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="19-table">19. 테이블 (Table)</h1>
+<table>
+<thead>
+<tr>
+<th>사용변수명</th>
+<th>사용용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>disabled</td>
+<td>비활성화여부</td>
+<td>선택 시, 시트 실행 모드에서 실행 버튼이 비활성화되고 데이터가 보이지 않음</td>
+</tr>
+<tr>
+<td>hideOnExport</td>
+<td>pdf 추출 시 개체 표시 여부</td>
+<td></td>
+</tr>
+<tr>
+<td>hideOnExecute</td>
+<td>시트 실행 모드에서 데이터 불러오기, 새로고침, 중지 등의 액션버튼 숨김여부</td>
+<td></td>
+</tr>
+<tr>
+<td>pagination</td>
+<td>true 시 페이지네이션 방식으로 보여줌</td>
+<td>false 시 스크롤 방식이며 virtualList 컴포넌트를 통해 무한스크롤링 방식으로 구현됨</td>
+</tr>
+<tr>
+<td>columnAutoWidth</td>
+<td>칼럼 넓이 자동 조정</td>
+<td>칼럼 넓이를 테이블 크기 / 데이터 길이에 맞출지 선택 여부</td>
+</tr>
+<tr>
+<td>columnDefs</td>
+<td>칼럼 정의 방식 설정</td>
+<td>자동 / 스크립트</td>
+</tr>
+<tr>
+<td>onSetColumnDefs</td>
+<td>칼럼을 스크립트로 커스터마이징하게 정의</td>
+<td>Javascript로 설정</td>
+</tr>
+</tbody>
+</table>
+<h1 id="20-text">20.  문자열 (Text)</h1>
+<table>
+<thead>
+<tr>
+<th>사용변수명</th>
+<th>사용용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td>문자열 내부에 들어갈 콘텐츠를 작성</td>
+<td></td>
+</tr>
+<tr>
+<td>isFormatDecimal</td>
+<td>소수점자릿수를 일괄적으로 제한 여부</td>
+<td></td>
+</tr>
+<tr>
+<td>decimalCnt</td>
+<td>isFormatDecimal = true일 시, 몇 자리까지 소수점자리를 표시할지를 설정</td>
+<td>default: 0 / 소수점 표시 안함</td>
+</tr>
+<tr>
+<td>hideOnExport</td>
+<td>pdf로 내보낼 때 해당 개체 표시여부 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>addComma</td>
+<td>구분 기호 사용 여부</td>
+<td>1000단위 마다 ,(쉼표)로 나누어서 표시할지를 설정</td>
+</tr>
+<tr>
+<td>isLocaleSeparator</td>
+<td>크롬에 설정된 국가에 따라 구분기호 사용 여부 결정</td>
+<td>Ex. '인도' 국가 설정 시, 서양식 3자리 표기법과 다르게 처음 3자리 이후 2자리마다 쉼표를 찍는 방식 채택</td>
+</tr>
+<tr>
+<td>decimalSeparator</td>
+<td>소수 구분 기호 시 사용할 문자를 설정</td>
+<td>Ex. 소수점 6자리를 @ 기호로 표기 시, 10.123000 -&gt; 10@123000 으로 UI에 표기됨</td>
+</tr>
+<tr>
+<td>thousandsSeparator</td>
+<td>1000단위마다 구분 기호를 사용 시 구분 문자를 설정</td>
+<td>Ex. @로 설정 시, 1000000 -&gt; 1@000@000 으로 UI에 표기됨</td>
+</tr>
+<tr>
+<td>overflowContentOption</td>
+<td>내부 문자열 등 콘텐츠가 크기를 넘쳤을 때 어떻게 할지를 결정</td>
+<td>1. 지정하지 않음 - 내부 콘텐츠가 넘쳐도 무시함<br>2. 폰트 크기 맞춤 - fitty 라이브러리를 활용하여 폰트 크기를 줄여 영역사이즈에 맞춤<br>3. ... 생략 표시 - vue3-text-clamp 라이브러리를 활용 마지막 줄 끝에 '...' 표시 후 이후 내용은 생략</td>
+</tr>
+<tr>
+<td>whiteSpaceOption</td>
+<td>내부 콘텐츠에 white-space 옵션을 적용함</td>
+<td>normal / nowrap / pre / pre-wrap / pre-line / break-spaces</td>
+</tr>
+<tr>
+<td>wordBreakOption</td>
+<td>내부 콘텐츠의 줄바꿈 옵션 word-break 옵션을 적용함</td>
+<td>normal / break-all / keep-all</td>
+</tr>
+<tr>
+<td>overflowWrapOption</td>
+<td>내부 콘텐츠의 넘침 옵션 overflow-wrap 옵션을 적용함</td>
+<td>normal / break-word / anywhere</td>
+</tr>
+</tbody>
+</table>
+<h1 id="21-timer">21. 타이머 (Timer)</h1>
+<p>- 실시간으로 데이터를 받아올 때, 타이머를 설정하여 주기를 설정함</p>
+<table>
+<thead>
+<tr>
+<th>사용변수명</th>
+<th>사용용도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>disabled</td>
+<td>비활성화 여부</td>
+<td></td>
+</tr>
+<tr>
+<td>intervalMSec</td>
+<td>타이머의 주기를 설정</td>
+<td></td>
+</tr>
+<tr>
+<td>onTimer</td>
+<td>타이머의 동작주기마다 발생하는 이벤트</td>
+<td>Javascript 표현식으로만 입력 가능</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link", "content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
